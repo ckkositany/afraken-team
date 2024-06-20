@@ -1,0 +1,147 @@
+Project status Report
+
+PROJECT TITLE: AFRAKEN website development
+
+NAME
+REG.NO 
+ROLE
+Mark Victor Kithinji
+SCT212-0105/2022
+Project Lead/ Quality Assurance
+Allan Njoroge
+SCT212-0046/2021
+WordPress backend developer/ researcher
+Samuel Gicheha
+SCT212-0118/2022
+WordPress backend developer/ researcher
+Derick Richard
+SCT212-0105/2022
+Figma designer/ designer/ WordPress UI-UX
+Rony Karanja
+SCT212-0590/2022
+Figma designer/ designer/ WordPress UI-UX
+
+
+project Executive Summary
+The AFRAKEN website development project is meant to build a modern, responsive and utility focused website for the Afraken community. The site should connect and engage alumni of various French universities living in Kenya. 
+Deliverables include:
+Project Plan
+Wireframes
+A functional website
+integration with payment
+
+
+
+DAILY REPORTS 
+DATE 
+DAILY ACHIEVEMENT 
+CHALLENGES/BLOCKERS 
+02/05/2024
+The firsta orientation was conducted by doctor Nderu
+N/A
+03/05/2024
+We formed a team and picked a project
+N/A
+06/05/2024
+We confirmed the timeframe of the AFRAKEN project with dr Nderu and William
+N/A
+07/05/2024
+We had our first meeting to break tasks on researching how we will achieve various deliverables
+N/A
+08/05/2024
+We broke ourselves to design and research teams
+N/A
+09/05/2024
+The design team started developing the initial wireframes
+Limited knowledge on how to use the Figma design tool
+10/05/2024
+The research team gave back a report on plugins we needed to achieve achieve the requirements using wordpress
+The design team started sampling other alumni sites 
+N/A
+13/05/2024
+Design team had the interactive prototype ready.
+We secured a meeting with Dr Ruth, from the AFRAKEN team to review the mockup
+N/A
+14/05/2024
+We presented the prototype to Dr Ruth. 
+Dr Ruth appreciated the effort and suggested a few improvements
+N/A
+15/05/2024
+The research team found a way for us to collaborate on WordPress.
+The design began to implement the improvements Dr Ruth requested
+N/A
+16/05/2024
+The research team contacted “jHub Domains Guy” to see if we could host the wordpress site
+It wasn't possible to host the site with them because its a wordpress site.
+To host with jHub, we would need to have the web files with us, which was not possible with wordpress
+17/05/2024
+We contacted a web developer in the industry to solicit advice on the steps to take
+
+
+20/05/2024
+We acquired a domain for KSH 206.7 to use for the project.
+We secured a second prototype review meeting with Dr Ruth
+We hosted the site with Google cloud services
+Development began
+We had to use our own money to acquire the domain to avoid delays
+21/05/2024
+We had the second meeting with Dr Ruth. She found the mockup impressive and greenlighted development
+We had very limited knowledge on how to use wordpress
+22/05/2024
+We installed all the plugins we needed and started building the UI using elementor plugin.
+Research team began working on memberships
+N/A
+23/05/2024
+Homepage was built and subsidiary pages start being built
+We realized we didn't have enough knowledge about AFRAKEN to build a number of the pages
+24/05/2024
+We ask Dr Ruth for crucial details we didn’t have which she gave promptly
+
+
+27/05/2024
+All the pages had been built, all functionalities had been added.
+The team works to polish and align everything
+N/A
+28/05/2024
+We presented the pre-release for user testing
+Dr Ruth did some comprehensive user testing worked with us to make some minor improvements around user experience
+Other AFRAKEN members don't seem as enthusiastic as Dr Ruth to get the site up, so they did not participate in user testing
+29/05/2024
+We used PowerPoint documents Dr Ruth provides to add more content to each sub-committees to make them available for visitors
+N/A
+30/05/2024
+We started working on blogs and writeups
+We started building a site showing what we have done
+N/A
+31/05/2024
+We did QA for membership functionality and payment methods
+N/A
+02/06/2024
+We reviewed the product with DR Ruth, identified areas to improve to make the site more professional
+N/A
+03/06/2024
+We began to work on changes the AFRAKEN representatives requested
+N/A
+04/06/2024
+We continued to address issues raised
+
+
+05/06/2024
+We received further feedback from other members of the afraken team and began working on them
+
+
+06/06/2024
+We finalized the requested updates and informed the AFRAKEN team of all the updates we had made
+
+
+10/06/24
+
+
+PROJECTS’ NEEDS
+
+A domain for development
+
+cost: KSH 206.7 reimbursement 
+
+
+GENERAL BLOCKERS
