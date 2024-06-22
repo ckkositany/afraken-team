@@ -1,189 +1,283 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>AFRAKEN Team</title>
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-  <link rel="stylesheet" href="styles.css">
-</head>
-<body>
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>AFRAKEN Team</title>
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" />
+		<link rel="stylesheet" href="style/styles.css" />
+		<link rel="stylesheet" href="style/responsibilities.css" />
+	</head>
+	<body>
+		<!-- Navbar -->
+		<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+			<a class="navbar-brand" href="#">Project Showcase</a>
+			<button
+				class="navbar-toggler"
+				type="button"
+				data-toggle="collapse"
+				data-target="#navbarNav"
+				aria-controls="navbarNav"
+				aria-expanded="false"
+				aria-label="Toggle navigation"
+			>
+				<span class="navbar-toggler-icon"></span>
+			</button>
+			<div class="collapse navbar-collapse" id="navbarNav">
+				<ul class="navbar-nav ml-auto">
+					<li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+					<li class="nav-item"><a class="nav-link" href="#project">Project</a></li>
+					<li class="nav-item"><a class="nav-link" href="#team">Team</a></li>
+					<li class="nav-item"><a class="nav-link" href="#organization">Organization</a></li>
+				</ul>
+			</div>
+		</nav>
 
-  <!-- Navbar -->
-  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-    <a class="navbar-brand" href="#">Project Showcase</a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarNav">
-      <ul class="navbar-nav ml-auto">
-        <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
-        <li class="nav-item"><a class="nav-link" href="#project">Project</a></li>
-        <li class="nav-item"><a class="nav-link" href="#team">Team</a></li>
-        <li class="nav-item"><a class="nav-link" href="#organization">Organization</a></li>
-      </ul>
-    </div>
-  </nav>
-
-  <!-- Hero Section -->
-  <!-- <header class="jumbotron text-center bg-primary text-white">
+		<!-- Hero Section -->
+		<!-- <header class="jumbotron text-center bg-primary text-white">
     <div class="container">
       <h1 class="display-4">Welcome to Our Project Showcase</h1>
       <p class="lead">Discover our innovative project, meet the team, and learn about our hosting organization.</p>
       <a href="#about" class="btn btn-light btn-lg">Learn More</a>
     </div>
   </header> -->
-  <header>
+		<header>
+			<!-- This div is  intentionally blank. It creates the transparent black overlay over the video which you can modify in the CSS -->
+			<div class="overlay"></div>
 
-    <!-- This div is  intentionally blank. It creates the transparent black overlay over the video which you can modify in the CSS -->
-    <div class="overlay"></div>
-  
-    <!-- The HTML5 video element that will create the background video on the header -->
-    <video playsinline="playsinline" autoplay="autoplay" muted="muted" loop="loop">
-      <source src="https://cdn.coverr.co/videos/coverr-cinematic-snowy-mountains-7615/720p.mp4" type="video/mp4">
-    </video>
-  
-    <!-- The header content -->
-    <div class="container h-100">
-      <div class="d-flex h-100 text-center align-items-center">
-        <div class="w-100 text-white">
-          <h1 class="display-3">Welcome to Our Project Showcase</h1>
-          <p class="lead mb-0">Discover our innovative project, meet the team, and learn about our hosting organization.</p>
-        </div>
-      </div>
-    </div>
-  </header>
-  
+			<!-- The HTML5 video element that will create the background video on the header -->
+			<video playsinline="playsinline" autoplay="autoplay" muted="muted" loop="loop">
+				<source src="https://cdn.coverr.co/videos/coverr-cinematic-snowy-mountains-7615/720p.mp4" type="video/mp4" />
+			</video>
 
-  <!-- About Section -->
-  <section id="about" class="py-5">
-    <div class="container">
-      <h2 class="text-center">About the Project</h2>
-      <p class="lead text-center">Our project aims to revolutionize the way we interact with technology, providing innovative solutions to everyday problems.</p>
-      <div class="row">
-        <div class="col-md-6">
-          <img src="https://via.placeholder.com/500" class="img-fluid" alt="About the project">
-        </div>
-        <div class="col-md-6">
-          <p>Our project focuses on delivering high-quality software solutions that enhance user experience and efficiency. We have a dedicated team working tirelessly to ensure the success of this project, and we are hosted by a prestigious organization that supports our goals and mission.</p>
-        </div>
-      </div>
-    </div>
-  </section>
+			<!-- The header content -->
+			<div class="container h-100">
+				<div class="d-flex h-100 text-center align-items-center">
+					<div class="w-100 text-white">
+						<h1 class="display-3">Welcome to Our Project Showcase</h1>
+						<p class="lead mb-0">
+							Discover our innovative project, meet the team, and learn about our hosting organization.
+						</p>
+					</div>
+				</div>
+			</div>
+		</header>
 
-  <!-- Project Section -->
-  <section id="project" class="bg-light py-5">
-    <div class="container">
-      <h2 class="text-center">Project Details</h2>
-      <div class="row">
-        <div class="col-md-6">
-          <p>The project involves multiple stages including research, development, testing, and deployment. Our team follows an agile methodology to ensure timely delivery and high-quality results. We aim to create a product that not only meets but exceeds user expectations.</p>
-        </div>
-        <div class="col-md-6">
-          <img src="https://via.placeholder.com/500" class="img-fluid" alt="Project details">
-        </div>
-      </div>
-    </div>
-  </section>
+		<!-- About Section -->
+		<section id="about" class="py-5">
+			<div class="container">
+				<h2 class="text-center">About the Project</h2>
+				<p class="lead text-center">
+					Our project aims to revolutionize the way we interact with technology, providing innovative solutions to everyday
+					problems.
+				</p>
+				<div>
+					<h4>Our Responsibilites</h4>
+					<!-- Blocks for them responsibilities -->
+					<div class="blocks_parent">
+						<div class="responsibility_block">
+							<div class="rb_block_left"></div>
+							<div class="rb_block_left">
+								<h5>Research</h5>
+								<p>
+									Our team conducts in-depth research to understand user needs and market trends, ensuring
+									that our product is both relevant and impactful.
+								</p>
+							</div>
+						</div>
+            <div class="responsibility_block">
+							<div class="rb_block_left"></div>
+							<div class="rb_block_left">
+								<h5>Research</h5>
+								<p>
+									Our team conducts in-depth research to understand user needs and market trends, ensuring
+									that our product is both relevant and impactful.
+								</p>
+							</div>
+						</div>
+            <div class="responsibility_block">
+							<div class="rb_block_left"></div>
+							<div class="rb_block_left">
+								<h5>Research</h5>
+								<p>
+									Our team conducts in-depth research to understand user needs and market trends, ensuring
+									that our product is both relevant and impactful.
+								</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
 
-  <section id="team" class="py-5">
-    <div class="container">
-      <h2 class="text-center">Meet the Team</h2>
-      <div class="row">
-        <!-- Team Member 1 -->
-        <div class="col-md-4 col-sm-6 mb-4">
-          <div class="card">
-            <img src="./Images/Eiffel tower 2.jpg" class="card-img-top rounded-circle mx-auto mt-3" alt="Team member">
-            <div class="card-body text-center">
-              <h4 class="card-title">Mark Kithinji</h4>
-              <p class="card-text text-muted">Lead Developer</p>
-              <p> He embodies the quintessential qualities of leadership, seamlessly guiding his team through project with a blend of strategic vision and meticulous attention to detail.</p>
-            </div>
-          </div>
-        </div>
-        <!-- Team Member 2 -->
-        <div class="col-md-4 col-sm-6 mb-4">
-          <div class="card">
-            <img src="https://via.placeholder.com/150" class="card-img-top rounded-circle mx-auto mt-3" alt="Team member">
-            <div class="card-body text-center">
-              <h4 class="card-title">Aprel Richards</h4>
-              <p class="card-text text-muted">Lead Designer</p>
-              <p>As a designer, He is a master of creativity and functionality, expertly crafting visually compelling and user-centric designs. His role encompasses the entire design process, from initial concept development to final execution, ensuring that each project aligns with the client's vision and objectives. </p>
-            </div>
-          </div>
-        </div>
-         <!-- Team Member 3 -->
-         <div class="col-md-4 col-sm-6 mb-4">
-            <div class="card">
-              <img src="https://via.placeholder.com/150" class="card-img-top rounded-circle mx-auto mt-3" alt="Team member">
-              <div class="card-body text-center">
-                <h4 class="card-title">Sam</h4>
-                <p class="card-text text-muted">Lead Developer</p>
-                <p>Jane oversees the development process, ensuring the highest quality of code and functionality.</p>
-              </div>
-            </div>
-          </div>
-           <!-- Team Member 4 -->
-        <div class="col-md-4 col-sm-6 mb-4">
-            <div class="card">
-              <img src="https://via.placeholder.com/150" class="card-img-top rounded-circle mx-auto mt-3" alt="Team member">
-              <div class="card-body text-center">
-                <h4 class="card-title">Allan Njoroge</h4>
-                <p class="card-text text-muted">Lead Developer</p>
-                <p>Jane oversees the development process, ensuring the highest quality of code and functionality.</p>
-              </div>
-            </div>
-          </div>
-           <!-- Team Member 5 -->
-        <div class="col-md-4 col-sm-6 mb-4">
-            <div class="card">
-              <img src="./Images/Eiffel Tower.jpg" class="card-img-top rounded-circle mx-auto mt-3" alt="Team member">
-              <div class="card-body text-center">
-                <h4 class="card-title">Ronny Karanja</h4>
-                <p class="card-text text-muted">Lead Developer</p>
-                <p>Jane oversees the development process, ensuring the highest quality of code and functionality.</p>
-              </div>
-            </div>
-          </div>
-        <!-- Team Member 6 -->
-        <div class="col-md-4 col-sm-6 mb-4">
-          <div class="card">
-            <img src="https://via.placeholder.com/150" class="card-img-top rounded-circle mx-auto mt-3" alt="Team member">
-            <div class="card-body text-center">
-              <h4 class="card-title">Kositany ck</h4>
-              <p class="card-text text-muted">UX Designer</p>
-              <p>Emily focuses on creating intuitive and user-friendly designs that enhance the user experience.</p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
+		<!-- Project Section -->
+		<section id="project" class="bg-light py-5">
+			<div class="container">
+				<h2 class="text-center">Project Details</h2>
+				<div class="row">
+					<div class="col-md-6">
+						<p>
+							The project involves multiple stages including research, development, testing, and deployment. Our team
+							follows an agile methodology to ensure timely delivery and high-quality results. We aim to create a
+							product that not only meets but exceeds user expectations.
+						</p>
+					</div>
+					<div class="col-md-6">
+						<img src="https://via.placeholder.com/500" class="img-fluid" alt="Project details" />
+					</div>
+				</div>
+			</div>
+		</section>
 
-  <!-- Organization Section -->
-  <section id="organization" class="bg-light py-5">
-    <div class="container">
-      <h2 class="text-center">Hosting Organization</h2>
-      <div class="row">
-        <div class="col-md-6">
-          <img src="https://via.placeholder.com/500" class="img-fluid" alt="Organization">
-        </div>
-        <div class="col-md-6">
-          <p>We are proudly hosted by XYZ Organization, a leading entity in the industry known for its support of innovative projects. Their mission is to foster creativity and provide resources for projects like ours to thrive.</p>
-          <p>For more information about the organization, visit their <a href="#">website</a> or follow them on social media.</p>
-        </div>
-      </div>
-    </div>
-  </section>
+		<section id="team" class="py-5">
+			<div class="container">
+				<h2 class="text-center">Meet the Team</h2>
+				<div class="row">
+					<!-- Team Member 1 -->
+					<div class="col-md-4 col-sm-6 mb-4">
+						<div class="card">
+							<img
+								src="./Images/Eiffel tower 2.jpg"
+								class="card-img-top rounded-circle mx-auto mt-3"
+								alt="Team member"
+							/>
+							<div class="card-body text-center">
+								<h4 class="card-title">Mark Kithinji</h4>
+								<p class="card-text text-muted">Lead Developer</p>
+								<p>
+									He embodies the quintessential qualities of leadership, seamlessly guiding his team
+									through project with a blend of strategic vision and meticulous attention to detail.
+								</p>
+							</div>
+						</div>
+					</div>
+					<!-- Team Member 2 -->
+					<div class="col-md-4 col-sm-6 mb-4">
+						<div class="card">
+							<img
+								src="https://via.placeholder.com/150"
+								class="card-img-top rounded-circle mx-auto mt-3"
+								alt="Team member"
+							/>
+							<div class="card-body text-center">
+								<h4 class="card-title">Aprel Richards</h4>
+								<p class="card-text text-muted">Lead Designer</p>
+								<p>
+									As a designer, He is a master of creativity and functionality, expertly crafting
+									visually compelling and user-centric designs. His role encompasses the entire design
+									process, from initial concept development to final execution, ensuring that each project
+									aligns with the client's vision and objectives.
+								</p>
+							</div>
+						</div>
+					</div>
+					<!-- Team Member 3 -->
+					<div class="col-md-4 col-sm-6 mb-4">
+						<div class="card">
+							<img
+								src="https://via.placeholder.com/150"
+								class="card-img-top rounded-circle mx-auto mt-3"
+								alt="Team member"
+							/>
+							<div class="card-body text-center">
+								<h4 class="card-title">Sam</h4>
+								<p class="card-text text-muted">Lead Developer</p>
+								<p>
+									Jane oversees the development process, ensuring the highest quality of code and
+									functionality.
+								</p>
+							</div>
+						</div>
+					</div>
+					<!-- Team Member 4 -->
+					<div class="col-md-4 col-sm-6 mb-4">
+						<div class="card">
+							<img
+								src="https://via.placeholder.com/150"
+								class="card-img-top rounded-circle mx-auto mt-3"
+								alt="Team member"
+							/>
+							<div class="card-body text-center">
+								<h4 class="card-title">Allan Njoroge</h4>
+								<p class="card-text text-muted">Lead Developer</p>
+								<p>
+									Jane oversees the development process, ensuring the highest quality of code and
+									functionality.
+								</p>
+							</div>
+						</div>
+					</div>
+					<!-- Team Member 5 -->
+					<div class="col-md-4 col-sm-6 mb-4">
+						<div class="card">
+							<img
+								src="./Images/Eiffel Tower.jpg"
+								class="card-img-top rounded-circle mx-auto mt-3"
+								alt="Team member"
+							/>
+							<div class="card-body text-center">
+								<h4 class="card-title">Ronny Karanja</h4>
+								<p class="card-text text-muted">Lead Developer</p>
+								<p>
+									Jane oversees the development process, ensuring the highest quality of code and
+									functionality.
+								</p>
+							</div>
+						</div>
+					</div>
+					<!-- Team Member 6 -->
+					<div class="col-md-4 col-sm-6 mb-4">
+						<div class="card">
+							<img
+								src="https://via.placeholder.com/150"
+								class="card-img-top rounded-circle mx-auto mt-3"
+								alt="Team member"
+							/>
+							<div class="card-body text-center">
+								<h4 class="card-title">Kositany ck</h4>
+								<p class="card-text text-muted">UX Designer</p>
+								<p>
+									Emily focuses on creating intuitive and user-friendly designs that enhance the user
+									experience.
+								</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
 
-  <!-- Footer -->
-  <footer class="text-center py-4 bg-dark text-white">
-    <p>&copy; 2024 Project Showcase. All rights reserved.</p>
-  </footer>
+		<!-- Organization Section -->
+		<section id="organization" class="bg-light py-5">
+			<div class="container">
+				<h2 class="text-center">Hosting Organization</h2>
+				<div class="row">
+					<div class="col-md-6">
+						<img src="https://via.placeholder.com/500" class="img-fluid" alt="Organization" />
+					</div>
+					<div class="col-md-6">
+						<p>
+							We are proudly hosted by XYZ Organization, a leading entity in the industry known for its support of
+							innovative projects. Their mission is to foster creativity and provide resources for projects like ours
+							to thrive.
+						</p>
+						<p>
+							For more information about the organization, visit their <a href="#">website</a> or follow them on
+							social media.
+						</p>
+					</div>
+				</div>
+			</div>
+		</section>
 
-  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-  <script src="code.js"></script>
-</body>
+		<!-- Footer -->
+		<footer class="text-center py-4 bg-dark text-white">
+			<p>&copy; 2024 Project Showcase. All rights reserved.</p>
+		</footer>
+
+		<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+		<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+		<script src="code.js"></script>
+	</body>
 </html>
