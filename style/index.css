@@ -1,0 +1,73 @@
+/* !This file contains base styles that apply across file */
+
+html {
+  scroll-behavior: smooth;
+}
+
+/* ! Remember to remove */
+
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #3c3b3c;
+}
+
+/* Styling for the main title, which is emphasized */
+h1.hero-title {
+    font-family: 'Arial', sans-serif; /* Clean and modern font */
+    font-size: 3em; /* Large font size for prominence */
+    font-weight: bold; /* Emphasizes the main title */
+    margin: 0.5em 0; /* Some margin for spacing */
+}
+
+/* General styling for h1 headings */
+h1 {
+    font-family: 'Arial', sans-serif; /* Consistent font across headings */
+    font-size: 2.5em; /* Slightly smaller than the hero title */
+    font-weight: bold;
+    margin: 0.6em 0; /* Margins for spacing */
+}
+
+/* General styling for h2 headings */
+h2 {
+    font-family: 'Arial', sans-serif;
+    font-size: 2em; /* Smaller than h1 */
+    font-weight: bold;
+    margin: 0.5em 0;
+}
+
+/* General styling for h3 headings */
+h3 {
+    font-family: 'Arial', sans-serif;
+    font-size: 1.75em; /* Smaller than h2 */
+    font-weight: bold;
+    margin: 0.4em 0;
+}
+
+/* General styling for h4 headings */
+h4 {
+    font-family: 'Arial', sans-serif;
+    font-size: 1.5em; /* Smaller than h3 */
+    font-weight: bold;
+    margin: 0.3em 0;
+}
+
+/* General styling for paragraphs */
+p {
+    font-family: 'Georgia', sans-serif; /* Different font for contrast with headings */
+    font-size: 0.5em; /* Standard readable font size */
+    line-height: 1.6; /* Increased line-height for readability */
+    margin: 0.8em 0; /* Margins for spacing between paragraphs */
+}
+
+.button:hover{
+  opacity: 0.9;
+  cursor: pointer;
+  outline: auto;
+  transition: 500ms;
+}
+
+
+h1, h2, h3, h4, p, a {
+    color: aliceblue;
+}

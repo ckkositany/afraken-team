@@ -6,110 +6,100 @@
   <title>AFRAKEN Team</title>
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
   <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="style/responsibilities.css">
+  <link rel="stylesheet" href="style/index.css">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
 </head>
 <body>
 
   <!-- Navbar -->
-  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-    <a class="navbar-brand" href="#">Project Showcase</a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarNav">
-      <ul class="navbar-nav ml-auto">
-        <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
-        <li class="nav-item"><a class="nav-link" href="#project">Project</a></li>
-        <li class="nav-item"><a class="nav-link" href="#team">Team</a></li>
-        <li class="nav-item"><a class="nav-link" href="#organization">Organization</a></li>
-      </ul>
-    </div>
-  </nav>
+   <section class="hero-section">
 
-		<!-- Hero Section -->
-		<!-- <header class="jumbotron text-center bg-primary text-white">
-    <div class="container">
-      <h1 class="display-4">Welcome to Our Project Showcase</h1>
-      <p class="lead">Discover our innovative project, meet the team, and learn about our hosting organization.</p>
-      <a href="#about" class="btn btn-light btn-lg">Learn More</a>
-    </div>
-  </header> -->
-		<header>
-			<!-- This div is  intentionally blank. It creates the transparent black overlay over the video which you can modify in the CSS -->
-			<div class="overlay"></div>
+      <!-- ? Navigation system -->
+      <!-- <nav class="navbar navbar-expand-lg navbar-dark">
+          <a class="navbar-brand" href="#">Project Showcase</a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+              <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+              <li class="nav-item"><a class="nav-link" href="#project">Project</a></li>
+              <li class="nav-item"><a class="nav-link" href="#team">Team</a></li>
+              <li class="nav-item"><a class="nav-link" href="#organization">Organization</a></li>
+            </ul>
+          </div>
+        </nav> -->
+        <nav>
+          <div class="logo">
+            <img src="./Images/logo-text(noBG).png" alt="logo">
+          </div>
+          <div class="navigation">
+            <a href="#">Introduction</a>
+            <a href="#">Deliverables</a>
+            <a href="#">Team</a>
+          </div>
+        </nav>
+        
 
-			<!-- The HTML5 video element that will create the background video on the header -->
-			<video playsinline="playsinline" autoplay="autoplay" muted="muted" loop="loop">
-				<source src="https://cdn.coverr.co/videos/coverr-cinematic-snowy-mountains-7615/720p.mp4" type="video/mp4" />
-			</video>
+        <!-- ? Hero video -->
+        <div class="overlay"></div>
 
-			<!-- The header content -->
-			<div class="container h-100">
-				<div class="d-flex h-100 text-center align-items-center">
-					<div class="w-100 text-white">
-						<h1 class="display-3">Welcome to Our Project Showcase</h1>
-						<p class="lead mb-0">
-							Discover our innovative project, meet the team, and learn about our hosting organization.
-						</p>
-					</div>
-				</div>
-			</div>
-		</header>
+          <div class="Landing-page-bg-video">
+             <video playsinline="playsinline" autoplay="autoplay" muted="muted" loop="loop">
+            <source src="https://cdn.coverr.co/videos/coverr-cinematic-snowy-mountains-7615/720p.mp4" type="video/mp4" />
+          </video>
+          </div>
+
+          <!-- ? Hero Text -->
+           <div class="hero-content container">              
+              <div class = "hero-buttons">
+                <div class="hero-button button primary-hero-button">View team</div>
+                <div class="hero-button button secondary-hero-button">View site</div>
+              </div>
+              <p>We built a fast, functional and responsive website for the Association of France Alumni in Kenya</p>
+              <h1 class="hero-title">AFRAKEN Website Project</h1>
+
+			    </div>
+   </section>
 
   <!-- About Section -->
-  <section id="about" class="py-5">
+  <section id="about" class="py-5 feature-section">
     <div class="container">
-      <h2 class="text-center">About AFRAKEN</h2>
-      <p class="lead text-center">AFRAKEN is an Association of graduates who completed their studies in France, residing and/or working in Kenya.</p>
+      <h2>Building the Association of France Alumni's website</h2>
+      <p >AFRAKEN is an Association of graduates who completed their studies in France, residing and/or working in Kenya.</p>
       <div class="row">
-        <div class="col-md-6">
-          <img src="./Images/Screenshot (83).png" class="img-fluid" alt="About the project">
-        </div>
         <div class="col-md-6">
           <p>Our project focuses on delivering high-quality software solutions that enhance user experience and efficiency. We have a dedicated team working tirelessly to ensure the success of this project, and we are hosted by a prestigious organization that supports our goals and mission.</p>
         </div>
       </div>
     </div>
   </section>
+
+
   <!-- Feature section -->
-  <section>
-    <div class="row g-4 py-5 row-cols-1 row-cols-lg-3">
-      <div class="feature col">
-        <div class="feature-icon d-inline-flex align-items-center justify-content-center text-bg-primary bg-gradient fs-2 mb-3">
-          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-server" viewBox="0 0 16 16">
-            <path d="M1.333 2.667C1.333 1.194 4.318 0 8 0s6.667 1.194 6.667 2.667V4c0 1.473-2.985 2.667-6.667 2.667S1.333 5.473 1.333 4z"/>
-            <path d="M1.333 6.334v3C1.333 10.805 4.318 12 8 12s6.667-1.194 6.667-2.667V6.334a6.5 6.5 0 0 1-1.458.79C11.81 7.684 9.967 8 8 8s-3.809-.317-5.208-.876a6.5 6.5 0 0 1-1.458-.79z"/>
-            <path d="M14.667 11.668a6.5 6.5 0 0 1-1.458.789c-1.4.56-3.242.876-5.21.876-1.966 0-3.809-.316-5.208-.876a6.5 6.5 0 0 1-1.458-.79v1.666C1.333 14.806 4.318 16 8 16s6.667-1.194 6.667-2.667z"/>
-          </svg>
+  <section class="feature-section">
+    <div class="our-responsibilities-parent">
+      <div class="responsibility">
+        <div class="icon">X</div>
+        <div class="content">
+          <h3>Responsibility 1</h3>
+          <p>Our project focuses on delivering high-quality software solutions that enhance user experience and efficiency. We have a dedicated team working tirelessly to ensure the success of this project, and we are hosted by a prestigious organization that supports our goals and mission.</p>
         </div>
-        <h3 class="fs-2 text-body-emphasis">Featured title</h3>
-        <p>Paragraph of text beneath the heading to explain the heading. We'll add onto it with another sentence and probably just keep going until we run out of words.</p>
-        <a href="#" class="icon-link">
-          Call to action
-          <svg class="bi"><use xlink:href="#chevron-right"></use></svg>
-        </a>
       </div>
-      <div class="feature col">
-        <div class="feature-icon d-inline-flex align-items-center justify-content-center text-bg-primary bg-gradient fs-2 mb-3">
-          <svg class="bi" width="1em" height="1em"><use xlink:href="#people-circle"></use></svg>
+      <div class="responsibility">
+        <div class="icon">X</div>
+        <div class="content">
+          <h3>Responsibility 1</h3>
+          <p>Our project focuses on delivering high-quality software solutions that enhance user experience and efficiency. We have a dedicated team working tirelessly to ensure the success of this project, and we are hosted by a prestigious organization that supports our goals and mission.</p>
         </div>
-        <h3 class="fs-2 text-body-emphasis">Featured title</h3>
-        <p>Paragraph of text beneath the heading to explain the heading. We'll add onto it with another sentence and probably just keep going until we run out of words.</p>
-        <a href="#" class="icon-link">
-          Call to action
-          <svg class="bi"><use xlink:href="#chevron-right"></use></svg>
-        </a>
       </div>
-      <div class="feature col">
-        <div class="feature-icon d-inline-flex align-items-center justify-content-center text-bg-primary bg-gradient fs-2 mb-3">
-          <svg class="bi" width="1em" height="1em"><use xlink:href="#toggles2"></use></svg>
+      <div class="responsibility">
+        <div class="icon">X</div>
+        <div class="content">
+          <h3>Responsibility 1</h3>
+          <p>Our project focuses on delivering high-quality software solutions that enhance user experience and efficiency. We have a dedicated team working tirelessly to ensure the success of this project, and we are hosted by a prestigious organization that supports our goals and mission.</p>
         </div>
-        <h3 class="fs-2 text-body-emphasis">Featured title</h3>
-        <p>Paragraph of text beneath the heading to explain the heading. We'll add onto it with another sentence and probably just keep going until we run out of words.</p>
-        <a href="#" class="icon-link">
-          Call to action
-          <svg class="bi"><use xlink:href="#chevron-right"></use></svg>
-        </a>
       </div>
     </div>
   </section>
