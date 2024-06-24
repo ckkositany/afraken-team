@@ -146,7 +146,6 @@ header {
 	align-items: center;
 	justify-content: center;
 	border: none;
-	border-radius: 10;
 }
 .primary-hero-button{
 	background-color: #007bff;
@@ -374,18 +373,6 @@ footer p {
 	margin: 10px;
 }
 
-@media (max-width: 768px) {
-	.flex-item {
-		flex: 1 1 calc(50% - 20px);
-	}
-}
-
-@media (max-width: 576px) {
-	.flex-item {
-		flex: 1 1 100%;
-	}
-}
-
 /* Project deatils.html */
 .card-container {
   perspective: 1000px;
@@ -409,6 +396,93 @@ footer p {
 }
 .card-back {
   transform: rotateY(180deg);
+}
+
+/*! Project Section styling */
+#project {
+    background-color: #f8f9fa; /* Light background */
+    padding: 40px 20px; /* Padding for section */
+}
+
+/* Process container styling */
+.process {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 20px; /* Space between each process block */
+    flex-wrap: wrap; /* Wrap elements on smaller screens */
+}
+
+/* Process details styling */
+.process-details {
+    flex: 1; /* Take up available space */
+    padding: 20px; /* Padding for text */
+    max-width: 600px; /* Maximum width for readability */
+}
+
+/* Process title styling */
+.process-title {
+    font-family: 'Arial', sans-serif;
+    font-size: 2em; /* Large font size */
+    font-weight: bold;
+    color: #333; /* Dark text color */
+    margin-bottom: 10px; /* Space below the title */
+}
+
+/* Process description styling */
+.process-description {
+    font-family: 'Arial', sans-serif;
+    font-size: 1em; /* Standard font size */
+    color: #666; /* Gray text color */
+    line-height: 1.6; /* Line height for readability */
+}
+
+/* Process illustration styling */
+.process-illustration {
+    flex: 1; /* Take up available space */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px; /* Padding for image */
+}
+
+/* Image styling */
+.process-illustration img {
+    max-width: 100%; /* Ensure image doesn't overflow */
+    height: auto; /* Maintain aspect ratio */
+    display: block; /* Remove inline spacing */
+	border-radius: 5px;
+
+}
+
+@media (max-width: 768px) {
+    /* Responsive adjustments for smaller screens */
+    .process {
+        flex-direction: column; /* Stack elements vertically */
+        text-align: center; /* Center align text */
+    }
+
+    .process-details,
+    .process-illustration {
+        max-width: 100%; /* Full width on small screens */
+    }
+
+    .process-illustration {
+        margin-top: 20px; /* Space between text and image */
+    }
+}
+
+
+@media (max-width: 768px) {
+	.flex-item {
+		flex: 1 1 calc(50% - 20px);
+	}
+}
+
+@media (max-width: 576px) {
+	.flex-item {
+		flex: 1 1 100%;
+	}
 }
 
 
