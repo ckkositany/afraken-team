@@ -158,11 +158,17 @@ header {
     padding: 20px;
 }
 
+
+
 /* Parent container for responsibilities */
 .our-responsibilities-parent {
     display: flex;
     flex-direction: row;
     align-items: flex-start;
+}
+
+.our-responsibilities-parent > *{
+	margin-top: 2rem;
 }
 
 /* Individual responsibility block */
