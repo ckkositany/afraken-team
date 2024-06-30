@@ -35,7 +35,7 @@
             <img src="./Images/logo-text(noBG).png" alt="logo">
           </div>
           <div class="navigation">
-            <a href="#">Introduction</a>
+            <a href="#featuresection">Introduction</a>
             <a href="#">Development Phases</a>
             <a href="#">Team</a>
           </div>
@@ -54,7 +54,7 @@
           <!-- ? Hero Text -->
            <div class="hero-content container">              
               <div class = "hero-buttons">
-                <div class="hero-button button primary-hero-button">View team</div>
+                <div onclick="window.location.href='#teamSection'" class="hero-button button primary-hero-button"><a href="#teamSection">View team</a></div>
                 <div class="hero-button button secondary-hero-button">View site</div>
               </div>
               <p>We built a fast, functional and responsive website for the Association of France Alumni in Kenya</p>
@@ -64,7 +64,7 @@
    </section>
 
   <!-- About Section -->
-  <section id="about" class="py-5 feature-section">
+  <section id="about" class="py-5">
     <div class="container">
       <h2>Building the Association of France Alumni's website</h2>
       <p >AFRAKEN is an Association of graduates who completed their studies in France, residing and/or working in Kenya.</p>
@@ -78,26 +78,34 @@
 
 
   <!-- Feature section -->
-  <section class="feature-section">
+  <section class="feature-section vh">
     <div class="our-responsibilities-parent">
     <div class="responsibility">
-        <div class="icon">X</div>
+        
         <div class="content">
-            <h3>Prototyping</h3>
+          <div class="title">
+              <img src="./images/icons/brush.png" alt="brush icon" class="icon-img">
+              <h3>Prototyping</h3>
+            </div>
             <p>In this initial phase, we carefully replicated the website design to capture all potential pain points and ensure client satisfaction with the chosen layout. This crucial step was executed using Figma, a powerful design tool that enabled precise visualizations.</p>
         </div>
     </div>
     <div class="responsibility">
-        <div class="icon">X</div>
         <div class="content">
-            <h3>Developing the UI</h3>
+            <div class="title">
+              <img src="./images/icons/computer.png" alt="brush icon" class="icon-img">
+              <h3>Developing the UI</h3>
+            </div>
             <p>Our journey with WordPress began here, and although challenging, it was incredibly rewarding. We embraced a steep learning curve, working tirelessly day and night. The result? A stunning, fully developed UI completed within a week, showcasing our dedication and rapid learning abilities.</p>
         </div>
     </div>
     <div class="responsibility">
         <div class="icon">X</div>
         <div class="content">
-            <h3>Integrating Functionality</h3>
+            <div class="title">
+              <img src="./images/icons/tools.png" alt="brush icon" class="icon-img">
+              <h3>Integrating Functionality</h3>
+            </div>
             <p>This phase was all about adding essential features like m-Pesa powered subscriptions, event management, booking systems, blogging, and user management. The most demanding aspect was selecting the right plugins, balancing cost and reliability to deliver a seamless user experience.</p>
         </div>
     </div>
@@ -112,10 +120,10 @@
         <h3 class="process-title">Prototyping Phase</h3>
         <p class="process-description">
           <br><br>
-          During this phase, we meticulously analyzed AFRAKEN's requirements and deliverables. Our mission was to ensure our design was not only functional but also deeply aligned with their goals. <br><br>
+          During this phase, we closely analyzed AFRAKEN's requirements and deliverables. Our mission was to ensure our design was not only functional but also deeply aligned with their goals. <br><br>
 
           <strong>Ideating</strong> <br><br>
-          We embarked on a rapid-fire ideation session, generating quick sketches at lightning speed. From these sketches, we cherry-picked the most promising elements, weaving them into a cohesive final design that we collectively embraced. <br><br>
+          We embarked on a rapid-fire ideation session, generating quick sketches. From these sketches, we then cherry-picked the most promising elements, weaving them into a cohesive final design that we collectively embraced. <br><br>
 
           <strong>Wireframing</strong> <br><br>
           Next, we crafted a wireframe, offering a skeletal preview of the website’s architecture. This visual blueprint was instrumental in mapping out the website's structure and envisioning the user's journey through it. <br><br>
@@ -152,11 +160,12 @@
           <h3 class="process-title">Integrating Functionality</h3>
           <p class="process-description">
             <br><br>
-              As developers, we particulary loved this phase as we often found ourselves wrigin custom code in PHP and JavaScript to achieve various custom results. Finding the right plugins was a challenge too but at this point it was a breeze as we'd alreay learned the ropes <br><br>
-            <strong>Configuring local payment gateways</strong>
+            As developers, we particularly enjoyed this phase because it allowed us to write custom code in PHP and JavaScript to achieve unique results. While finding the right plugins was initially challenging, by this stage we had mastered the process, making it much smoother. <br><br>
+                      
+            <strong>Configuring Local Payment Gateways</strong>
             <br><br>
-            We did integration of m-Pesa and various internationally recognized cards. This involved cherry piskig the right plugins and interwiving them closely to make it possible to make subscriptions possible using mpesa <br><br>
-            <strong></strong>
+            We integrated m-Pesa and various internationally recognized card payment options. This involved carefully selecting the right plugins and weaving them together to enable seamless subscriptions via m-Pesa. This task was intricate, yet rewarding, as it allowed us to enhance the project's functionality and user experience.
+            <br><br>
             <br><br>
           </p>
 
@@ -168,14 +177,14 @@
   </section>
 
   <!-- Team section -->
-  <section id="team" class="py-5">
+  <section id="team" class="py-5 teamSection">
     <div class="container">
       <h2 class="text-center">Meet the Team</h2>
       <div class="row">
         <!-- Team Member 1 -->
         <div class="col-md-4 col-sm-6 mb-4">
-          <div class="card h-100 zoom" data-mdb-animation-init="" data-mdb-animation-start="onHover" data-mdb-animation="zoom-in" data-mdb-animation-reset="true" data-mdb-animation-initialized="true" style="animation-duration: 500ms">
-            <img src="./images/Eiffel tower 2.jpg" class="card-img-top rounded-circle mx-auto mt-3" alt="Team member">
+          <div class="card h-100 XYZ" data-mdb-animation-init="" data-mdb-animation-start="onHover" data-mdb-animation="zoom-in" data-mdb-animation-reset="true" data-mdb-animation-initialized="true" style="animation-duration: 500ms">
+            <!-- <img src="./images/Eiffel tower 2.jpg" class="card-img-top rounded-circle mx-auto mt-3" alt="Team member"> -->
             <div class="card-body text-center">
               <h4 class="card-title">Mark Kithinji</h4>
               <p class="card-text text-muted">Lead Developer</p>
@@ -185,10 +194,10 @@
         </div>
         <!-- Team Member 2 -->
         <div class="col-md-4 col-sm-6 mb-4">
-          <div class="card h-100 zoom">
-            <img src="./images/Eiffel Tower 3.JPG" class="card-img-top rounded-circle mx-auto mt-3" alt="Team member">
+          <div class="card h-100 XYZ">
+            <!-- <img src="./images/Eiffel Tower 3.JPG" class="card-img-top rounded-circle mx-auto mt-3" alt="Team member"> -->
             <div class="card-body text-center">
-              <h4 class="card-title">Aprel Richards</h4>
+              <h4 class="card-title">Derick Richards</h4>
               <p class="card-text text-muted">Lead Designer</p>
               <p>As a designer, He is a master of creativity and functionality, expertly crafting visually compelling and user-centric designs. His role encompasses the entire design process, from initial concept development to final execution ensuring that each project aligns with the client's vision and objectives.</p>
             </div>
@@ -196,19 +205,19 @@
         </div>
          <!-- Team Member 3 -->
          <div class="col-md-4 col-sm-6 mb-4">
-            <div class="card h-100 zoom">
-              <img src="./images/Eiffel tower 4.jpg" class="card-img-top rounded-circle mx-auto mt-3" alt="Team member">
+            <div class="card h-100 XYZ">
+              <!-- <img src="./images/Eiffel tower 4.jpg" class="card-img-top rounded-circle mx-auto mt-3" alt="Team member"> -->
               <div class="card-body text-center">
-                <h4 class="card-title">Sam</h4>
-                <p class="card-text text-muted">Lead Developer</p>
-                <p>Jane oversees the development process, ensuring the highest quality of code and functionality.</p>
+                <h4 class="card-title">Samuel Gicheha</h4>
+                <p class="card-text text-muted">Backend developer</p>
+                <p>As a backend developer, he is skilled in creating robust and scalable server-side applications. He handles the entire development process, from architecture design to implementation, ensuring projects meet the client's technical and business goals.</p>
               </div>
             </div>
           </div>
            <!-- Team Member 4 -->
         <div class="col-md-4 col-sm-6 mb-4">
-            <div class="card h-100 zoom">
-              <img src="./images/Eiffel city.jpg" class="card-img-top rounded-circle mx-auto mt-3" alt="Team member">
+            <div class="card h-100 XYZ">
+              <!-- <img src="./images/Eiffel city.jpg" class="card-img-top rounded-circle mx-auto mt-3" alt="Team member"> -->
               <div class="card-body text-center">
                 <h4 class="card-title">Allan Njoroge</h4>
                 <p class="card-text text-muted">Lead Developer</p>
@@ -218,8 +227,8 @@
           </div>
            <!-- Team Member 5 -->
         <div class="col-md-4 col-sm-6 mb-4">
-            <div class="card h-100 zoom">
-              <img src="./images//Eiffel Tower.jpg" class="card-img-top rounded-circle mx-auto mt-3" alt="Team member">
+            <div class="card h-100 XYZ">
+              <!-- <img src="./images//Eiffel Tower.jpg" class="card-img-top rounded-circle mx-auto mt-3" alt="Team member"> -->
               <div class="card-body text-center">
                 <h4 class="card-title">Ronny Karanja</h4>
                 <p class="card-text text-muted">Lead Developer</p>
@@ -229,8 +238,8 @@
           </div>
         <!-- Team Member 6 -->
         <div class="col-md-4 col-sm-6 mb-4">
-          <div class="card h-100 zoom">
-            <img src="./images/me.jpeg" class="card-img-top rounded-circle mx-auto mt-3" alt="Team member">
+          <div class="card h-100 XYZ">
+            <!-- <img src="./images/me.jpeg" class="card-img-top rounded-circle mx-auto mt-3" alt="Team member"> -->
             <div class="card-body text-center">
               <h4 class="card-title">Kositany ck</h4>
               <p class="card-text text-muted">UX Designer</p>
@@ -259,7 +268,7 @@
 
 		<!-- Footer -->
 		<footer class="text-center py-4 bg-dark text-white">
-			<p>&copy; 2024 Project Showcase. All rights reserved.</p>
+			<p>&copy; 2024 TechCrew. All rights reserved.</p>
 		</footer>
 
 		<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
