@@ -136,7 +136,7 @@ header {
 }
 .hero-buttons > * {
 	text-decoration: none;
-	background-color: #fff;
+	/* background-color: #fff; */
 	margin-right: 2rem;
 	width: 16rem;
 	max-width: 60vw;
@@ -551,5 +551,6 @@ footer p {
     margin-top: 20px;
   }
 }
+
 
 
