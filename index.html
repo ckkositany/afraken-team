@@ -14,31 +14,17 @@
 <body>
 
   <!-- Navbar -->
-   <section class="hero-section">
+   <section class="hero-section" id="home">
 
-      <!-- ? Navigation system -->
-      <!-- <nav class="navbar navbar-expand-lg navbar-dark">
-          <a class="navbar-brand" href="#">Project Showcase</a>
-          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav ml-auto">
-              <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
-              <li class="nav-item"><a class="nav-link" href="#project">Project</a></li>
-              <li class="nav-item"><a class="nav-link" href="#team">Team</a></li>
-              <li class="nav-item"><a class="nav-link" href="#organization">Organization</a></li>
-            </ul>
-          </div>
-        </nav> -->
+     
         <nav>
           <div class="logo">
-            <img src="./Images/logo-text(noBG).png" alt="logo">
+          <img src="./Images/logo-text(noBG).png" alt="logo">
           </div>
           <div class="navigation">
-            <a href="#featuresection">Introduction</a>
-            <a href="#">Development Phases</a>
-            <a href="#">Team</a>
+            <a href="#feature">Introduction</a>
+            <a href="#project">Development Phases</a>
+            <a href="#team">Team</a>
           </div>
         </nav>
         
@@ -55,8 +41,10 @@
           <!-- ? Hero Text -->
            <div class="hero-content container">              
               <div class = "hero-buttons">
-                <div onclick="window.location.href='#teamSection'" class="hero-button button primary-hero-button"><a href="#teamSection">View team</a></div>
-                <div class="hero-button button secondary-hero-button">View site</div>
+                <div onclick="window.location.href='#team'" class="hero-button button primary-hero-button mt-3"><a href="#team">View team</a></div>
+                <button type="button" class="btn btn-primary mt-3" onclick="window.location.href='https://afrasamp.quest/'">View Site</button>
+                <!-- <div class="hero-button button secondary-hero-button">View site</div> -->
+                
               </div>
               <p>We built a fast, functional and responsive website for the Association of France Alumni in Kenya</p>
               <h1 class="hero-title">AFRAKEN Website Project</h1>
@@ -80,7 +68,7 @@
   </section>
 
   <!-- New Feature section -->
-<section class="feature-section py-5">
+<section id="feature" class="feature-section py-5">
   <div class="container">
     <div class="row">
       <div class="col-md-4 d-flex">
@@ -255,13 +243,13 @@
   <!-- Organization Section -->
   <section id="organization" class="bg-light py-5">
     <div class="container">
-      <h2 class="text-center">Hosting Organization</h2>
+      <h2 class="text-center text-dark">Hosting Organization</h2>
       <div class="row">
         <div class="col-md-6 ">
           <img src="./images/Jhub.jpg" class="img-fluid" alt="Organization">
         </div>
         <div class="col-md-6">
-          <p>We are proudly hosted by <a href="https://jhubafrica.com/">JHUB</a> Organization, a leading entity in the industry known for its support of innovative projects. Their mission is to foster creativity and provide resources for projects like ours to thrive.</p>
+          <p class="text-dark">We are proudly hosted by <a href="https://jhubafrica.com/" class="text-info">JHUB</a> Organization, a leading entity in the industry known for its support of innovative projects. Their mission is to foster creativity and provide resources for projects like ours to thrive.</p>
         </div>
       </div>
     </div>
@@ -321,6 +309,3 @@
 	</body>
 </html>
 
-<!-- <div class="square" data-mdb-animation-init="" data-mdb-animation-start="onHover" data-mdb-animation="zoom-in" data-mdb-animation-reset="true" data-mdb-animation-initialized="true" style="animation-duration: 500ms"> -->
-    zoom-in
-  </div>
