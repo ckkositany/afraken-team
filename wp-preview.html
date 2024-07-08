@@ -1,0 +1,110 @@
+<div id="news-section">Loading posts...</div>
+
+<script>
+    window.onload = function () {
+        const categoryId = 39; // Replace with your category ID
+        const apiUrl = `https://afrasamp.quest/wp-json/wp/v2/posts?categories=${categoryId}&_embed`;
+
+        fetch(apiUrl)
+            .then(response => response.json())
+            .then(posts => {
+                const container = document.getElementById('news-section');
+                container.innerHTML = ''; // Clear default loading message
+                
+                posts.forEach(post => {
+                    const postContainer = document.createElement('div');
+                    postContainer.classList.add('post-container');
+
+                    // Extracting data
+                    const title = post.title.rendered;
+                    const excerpt = post.excerpt.rendered;
+                    const date = new Date(post.date).toLocaleDateString(); // Format date
+                    const author = post.author;
+
+                    // Creating elements
+                    const img = document.createElement('img');
+                    const content = document.createElement('div');
+                    const titleElem = document.createElement('h2');
+                    const excerptElem = document.createElement('p');
+                    const readMoreLink = document.createElement('a');
+                    const authorElem = document.createElement('p');
+                    const dateElem = document.createElement('p');
+
+                    // Set attributes and content
+                    img.src = post._embedded['wp:featuredmedia'][0].source_url; // Featured image
+                    titleElem.innerHTML = title;
+                    excerptElem.innerHTML = excerpt;
+                    readMoreLink.href = post.link;
+                    readMoreLink.innerHTML = 'Read More';
+                    authorElem.innerHTML = `By ${post._embedded.author[0].name}`; // Author name
+                    dateElem.innerHTML = `Published on ${date}`; // Published date
+
+                    // Append elements
+                    content.appendChild(titleElem);
+                    content.appendChild(excerptElem);
+                    content.appendChild(readMoreLink);
+                    content.appendChild(authorElem);
+                    content.appendChild(dateElem);
+
+                    // Alternate layout
+                    if (posts.indexOf(post) % 2 === 0) {
+                        postContainer.appendChild(content);
+                        postContainer.appendChild(img);
+                    } else {
+                        postContainer.appendChild(img);
+                        postContainer.appendChild(content);
+                    }
+
+                    container.appendChild(postContainer);
+                });
+            })
+            .catch(error => console.error('Error fetching posts:', error));
+    }
+</script>
+
+<style>
+    #news-section {
+        margin-top: 5rem;
+        display: flex;
+        flex-direction: column;
+        gap: 5rem;
+    }
+
+    .post-container {
+        display: flex;
+        align-items: center;
+        gap: 20px;
+    }
+
+    .post-container img {
+        width: 50%;
+        max-width: unset;
+        vertical-align: middle;
+        max-height: 500px;
+        object-fit: cover;
+    }
+
+    .post-container div {
+        width: 50%;
+    }
+
+    .post-container h2 {
+        font-size: 1.5rem;
+        margin-bottom: 10px;
+    }
+
+    .post-container p {
+        line-height: 1.6;
+    }
+
+    .post-container a {
+        color: #007bff;
+        text-decoration: none;
+        display: block;
+        margin-top: 10px;
+    }
+
+    .post-container a:hover {
+        text-decoration: underline;
+    }
+</style>
