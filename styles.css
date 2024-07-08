@@ -136,7 +136,7 @@ header {
 }
 .hero-buttons > * {
 	text-decoration: none;
-	background-color: #fff;
+	/* background-color: #fff; */
 	margin-right: 2rem;
 	width: 16rem;
 	max-width: 60vw;
@@ -186,53 +186,45 @@ header {
 	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
 }
 
-/* Icon styling */
-.responsibility > .content > .title {
-	background-color: #3a3a3c; /* Darker background for the icon */
-	min-width: 50px; /* Icon width */
-	height: 50px; /* Icon height */
-	display: flex;
-	align-items: center;
-	margin-right: 20px; /* Space between icon and content */
-	margin-bottom: 20px; /* Space between icon and content */
+/* feature-section for mark start */
+.feature-section {
+    background-color: #1c1c1e;
+  }
+  
+  .responsive {
+    transition: transform 0.2s;
+     background-color: #2c2c2e; 
+  }
+  
+  .responsive:hover {
+    transform: scale(1.05);
+  }
+  
+  .icon-img {
+    width: 40px;
+    height: 40px;
+  }
 
-	border-radius: 8px;
-	margin-right: 20px; /* Space between icon and content */
-}
-.responsibility > .content > .title > * {
-	margin-top: auto;
-	margin-bottom: auto;
-	margin-left: 1rem;
-}
-.responsibility > .content > .title > img {
-	width: 30px; /* Icon size */
-	height: 30px; /* Icon size */
-}
-
-/* Content styling */
-.content {
-	display: flex;
-	flex-direction: column;
-}
-
-/* Heading styling */
-.content h3 {
-	font-family: "Arial", sans-serif;
+  .responsive >  .title  {
+    font-weight: bold;
+    background-color: #343a40;
+  }
+  .content h3{
+    font-family: "Arial", sans-serif;
 	font-size: 1.5em;
 	font-weight: bold;
 	color: #fff; /* White color for the heading */
 	margin: 0 0 10px 0; /* Bottom margin for spacing */
-}
-
-/* Paragraph styling */
-.content p {
-	font-family: "Arial", sans-serif;
+  }
+  .content p {
+    font-family: "Arial", sans-serif;
 	font-size: 1em;
 	color: #d1d1d6; /* Light gray color for the text */
 	margin: 0 0 20px 0; /* Bottom margin for spacing */
 	line-height: 1.6; /* Line height for readability */
-}
-
+  }
+  
+/* end of feature-section for mark */
 /* Button styling */
 .primary-button {
 	background-color: #007bff; /* Blue background for the button */
@@ -244,6 +236,7 @@ header {
 	cursor: pointer;
 	transition: background-color 0.3s ease; /* Smooth background color transition */
 }
+
 
 .primary-button:hover {
 	background-color: #0056b3; /* Darker blue on hover */
@@ -503,3 +496,63 @@ footer p {
 		flex: 1 1 100%;
 	}
 }
+
+/* Footer */
+/* Footer Styles */
+.footer {
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+
+.footer h5 {
+  font-size: 1.2rem;
+  margin-bottom: 20px;
+}
+
+.footer ul {
+  padding-left: 0;
+  list-style: none;
+}
+
+.footer ul li {
+  margin-bottom: 10px;
+}
+
+.footer ul li i {
+  margin-right: 10px;
+}
+
+.footer a {
+  text-decoration: none;
+  color: #ffffff;
+}
+
+.footer a:hover {
+  text-decoration: underline;
+}
+
+.footer .social-icons a {
+  font-size: 1.5rem;
+  margin-right: 20px;
+}
+
+.footer .social-icons a:hover {
+  color: #007bff;
+}
+
+@media (max-width: 576px) {
+  .footer .col-md-4 {
+    text-align: center;
+  }
+
+  .footer .col-md-4.mb-4 {
+    margin-bottom: 20px;
+  }
+
+  .footer .col-md-4 h5 {
+    margin-top: 20px;
+  }
+}
+
+
+

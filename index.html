@@ -9,36 +9,45 @@
   <link rel="stylesheet" href="style/responsibilities.css">
   <link rel="stylesheet" href="style/index.css">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
 
   <!-- ! Start here -->
   <!-- Navbar -->
-   <section class="hero-section">
+   <section class="hero-section" id="home">
 
-      <!-- ? Navigation system -->
-      <!-- <nav class="navbar navbar-expand-lg navbar-dark">
-          <a class="navbar-brand" href="#">Project Showcase</a>
-          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav ml-auto">
-              <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
-              <li class="nav-item"><a class="nav-link" href="#project">Project</a></li>
-              <li class="nav-item"><a class="nav-link" href="#team">Team</a></li>
-              <li class="nav-item"><a class="nav-link" href="#organization">Organization</a></li>
-            </ul>
-          </div>
-        </nav> -->
-        <nav>
+     
+        <!-- <nav>
           <div class="logo">
-            <img src="./Images/logo-text(noBG).png" alt="logo">
+          <img src="./Images/logo-text(noBG).png" alt="logo">
           </div>
           <div class="navigation">
-            <a href="#featuresection">Introduction</a>
-            <a href="#">Development Phases</a>
-            <a href="#">Team</a>
+            <a href="#feature">Introduction</a>
+            <a href="#project">Development Phases</a>
+            <a href="#team">Team</a>
+          </div>
+        </nav> -->
+        <nav class="navbar navbar-expand-lg">
+          <div class="container-fluid">
+            <a class="navbar-brand" href="#home"><img src="./Images/logo-text(noBG).png" alt="logo width="40" height="34""></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+              <ul class="navbar-nav">
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="#feature">Introduction</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#project">Development Phases</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#team">Team</a>
+                </li>
+            
+              </ul>
+            </div>
           </div>
         </nav>
         
@@ -48,21 +57,25 @@
 
           <div class="Landing-page-bg-video">
              <video playsinline="playsinline" autoplay="autoplay" muted="muted" loop="loop">
-            <source src="https://cdn.coverr.co/videos/coverr-cinematic-snowy-mountains-7615/720p.mp4" type="video/mp4" />
+            <source src="./images/hacking.mp4" type="video/mp4" />
           </video>
           </div>
 
           <!-- ? Hero Text -->
            <div class="hero-content container">              
               <div class = "hero-buttons">
-                <div onclick="window.location.href='#teamSection'" class="hero-button button primary-hero-button"><a href="#teamSection">View team</a></div>
-                <div class="hero-button button secondary-hero-button">View site</div>
+                <div onclick="window.location.href='#team'" class="hero-button button primary-hero-button mt-3"><a href="#team">View team</a></div>
+                <button type="button" class="btn btn-primary mt-3" onclick="window.location.href='https://afrasamp.quest/'">View Site</button>
+                <!-- <div class="hero-button button secondary-hero-button">View site</div> -->
+                
               </div>
               <p>We built a fast, functional and responsive website for the Association of France Alumni in Kenya</p>
               <h1 class="hero-title">AFRAKEN Website Project</h1>
 
 			    </div>
    </section>
+  
+  
 
   <!-- ! End here -->
   <!-- About Section -->
@@ -78,42 +91,40 @@
     </div>
   </section>
 
-
-  <!-- Feature section -->
-  <section class="feature-section vh">
-    <div class="our-responsibilities-parent">
-    <div class="responsibility">
-        
-        <div class="content">
-          <div class="title">
-              <img src="./images/icons/brush.png" alt="brush icon" class="icon-img">
-              <h3>Prototyping</h3>
-            </div>
-            <p>In this initial phase, we carefully replicated the website design to capture all potential pain points and ensure client satisfaction with the chosen layout. This crucial step was executed using Figma, a powerful design tool that enabled precise visualizations.</p>
+  <!-- New Feature section -->
+<section id="feature" class="feature-section py-5">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-4 d-flex">
+        <div class="responsive flex-fill p-4 mb-4 content">
+          <div class="title d-flex align-items-center mb-3">
+            <img src="./images/icons/brush.png" alt="brush icon" class="icon-img mr-3">
+            <h3 class="m-0">Prototyping</h3>
+          </div>
+          <p>In this initial phase, we carefully replicated the website design to capture all potential pain points and ensure client satisfaction with the chosen layout. This crucial step was executed using Figma, a powerful design tool that enabled precise visualizations.</p>
         </div>
-    </div>
-    <div class="responsibility">
-        <div class="content">
-            <div class="title">
-              <img src="./images/icons/computer.png" alt="brush icon" class="icon-img">
-              <h3>Developing the UI</h3>
-            </div>
-            <p>Our journey with WordPress began here, and although challenging, it was incredibly rewarding. We embraced a steep learning curve, working tirelessly day and night. The result? A stunning, fully developed UI completed within a week, showcasing our dedication and rapid learning abilities.</p>
+      </div>
+      <div class="col-md-4 d-flex">
+        <div class="responsive flex-fill p-4 mb-4 content">
+          <div class="title d-flex align-items-center mb-3">
+            <img src="./images/icons/computer.png" alt="computer icon" class="icon-img mr-3">
+            <h3 class="m-0">Developing the UI</h3>
+          </div>
+          <p>Our journey with WordPress began here, and although challenging, it was incredibly rewarding. We embraced a steep learning curve, working tirelessly day and night. The result? A stunning, fully developed UI completed within a week, showcasing our dedication and rapid learning abilities.</p>
         </div>
-    </div>
-    <div class="responsibility">
-        <div class="icon">X</div>
-        <div class="content">
-            <div class="title">
-              <img src="./images/icons/tools.png" alt="brush icon" class="icon-img">
-              <h3>Integrating Functionality</h3>
-            </div>
-            <p>This phase was all about adding essential features like m-Pesa powered subscriptions, event management, booking systems, blogging, and user management. The most demanding aspect was selecting the right plugins, balancing cost and reliability to deliver a seamless user experience.</p>
+      </div>
+      <div class="col-md-4 d-flex">
+        <div class="responsive flex-fill p-4 mb-4 content">
+          <div class="title d-flex align-items-center mb-3">
+            <img src="./images/icons/tools.png" alt="tools icon" class="icon-img mr-3">
+            <h3 class="m-0">Integrating Functionality</h3>
+          </div>
+          <p>This phase was all about adding essential features like m-Pesa powered subscriptions, event management, booking systems, blogging, and user management. The most demanding aspect was selecting the right plugins, balancing cost and reliability to deliver a seamless user experience.</p>
         </div>
+      </div>
     </div>
-</div>
-
-  </section>
+  </div>
+</section>
 
   <!-- Project Section -->
   <section id="project" class="bg-light py-5">
@@ -256,22 +267,64 @@
   <!-- Organization Section -->
   <section id="organization" class="bg-light py-5">
     <div class="container">
-      <h2 class="text-center">Hosting Organization</h2>
+      <h2 class="text-center text-dark">Hosting Organization</h2>
       <div class="row">
         <div class="col-md-6 ">
           <img src="./images/Jhub.jpg" class="img-fluid" alt="Organization">
         </div>
         <div class="col-md-6">
-          <p>We are proudly hosted by <a href="https://jhubafrica.com/">JHUB</a> Organization, a leading entity in the industry known for its support of innovative projects. Their mission is to foster creativity and provide resources for projects like ours to thrive.</p>
+          <p class="text-dark">We are proudly hosted by <a href="https://jhubafrica.com/" class="text-info">JHUB</a> Organization, a leading entity in the industry known for its support of innovative projects. Their mission is to foster creativity and provide resources for projects like ours to thrive.</p>
         </div>
       </div>
     </div>
   </section>
 
-		<!-- Footer -->
-		<footer class="text-center py-4 bg-dark text-white">
-			<p>&copy; 2024 TechCrew. All rights reserved.</p>
-		</footer>
+  <!-- Footer -->
+  <!-- Footer -->
+<footer class="footer bg-dark text-white pt-4">
+  <div class="container">
+    <div class="row">
+      <!-- Quick Links -->
+      <div class="col-md-4 col-sm-6 mb-4">
+        <h5>Quick Links</h5>
+        <ul class="list-unstyled">
+          <li><a href="#about" class="text-white">About</a></li>
+          <li><a href="#project" class="text-white">Project</a></li>
+          <li><a href="#team" class="text-white">Team</a></li>
+          <li><a href="#organization" class="text-white">Organization</a></li>
+        </ul>
+      </div>
+      <!-- Contact Information -->
+      <div class="col-md-4 col-sm-6 mb-4">
+        <h5>Contact Us</h5>
+        <ul class="list-unstyled">
+          <li><i class="fas fa-map-marker-alt"></i> 123 Main Street, City, Country</li>
+          <li><i class="fas fa-phone"></i> (123) 456-7890</li>
+          <li><i class="fas fa-envelope"></i> email@example.com</li>
+        </ul>
+      </div>
+      <!-- Social Media -->
+      <div class="col-md-4 col-sm-12 mb-4">
+        <h5>Follow Us</h5>
+        <div>
+          <a href="#" class="text-white mr-3"><i class="fab fa-facebook-f"></i></a>
+          <a href="#" class="text-white mr-3"><i class="fab fa-twitter"></i></a>
+          <a href="#" class="text-white mr-3"><i class="fab fa-instagram"></i></a>
+          <a href="#" class="text-white mr-3"><i class="fab fa-linkedin"></i></a>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-12 text-center mt-3">
+        <p>&copy; 2024 Project Showcase. All rights reserved.</p>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<!-- Font Awesome CDN for social media icons -->
+<script src="https://kit.fontawesome.com/a076d05399.js"></script>
+
 
 		<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
 		<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
@@ -280,6 +333,3 @@
 	</body>
 </html>
 
-<!-- <div class="square" data-mdb-animation-init="" data-mdb-animation-start="onHover" data-mdb-animation="zoom-in" data-mdb-animation-reset="true" data-mdb-animation-initialized="true" style="animation-duration: 500ms"> -->
-    zoom-in
-  </div>
