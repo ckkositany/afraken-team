@@ -10994,42 +10994,75 @@ header .container{
   z-index: 2;
 }
 
-/* Marquee  */
-.marquee {
-  overflow: hidden;
+
+
+/* Adjust partner section */
+.marquee-container {
   position: relative;
+  width: 100%;
+  overflow: hidden;
+  white-space: nowrap;
+  background: transparent;
+  padding: 1rem 0;
+}
+
+.marquee {
+  display: inline-block;
+  white-space: nowrap;
+  animation: marquee 20s linear infinite;
+}
+
+.marquee:hover .marquee-content {
+  animation-play-state: paused;
 }
 
 .marquee-content {
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
   align-items: center;
-  animation: marquee 15s linear infinite;
+}
+
+.marquee-content a {
+  display: inline-block;
+  padding: 0 3rem; /* Increased spacing between elements */
 }
 
 .marquee-content img {
-  max-width: 150px; /* Adjust the size as needed */
-  margin: 0 10px;
-}
-/* Pause animation on hover */
-.marquee-content:hover {
-  animation-play-state: paused;
+  max-height: 120px; /* Increased height */
 }
 
 @keyframes marquee {
-  0% {
+  from {
     transform: translateX(100%);
   }
-  100% {
+  to {
     transform: translateX(-100%);
   }
 }
 
-/* Make it responsive */
+/* Ensuring responsiveness  */
+/* Responsive styles */
 @media (max-width: 768px) {
-  .marquee-content img {
-    max-width: 100px; /* Adjust size for smaller screens */
+  .marquee-content a {
+    padding: 0 2rem; /* Decrease spacing between elements */
   }
+  .marquee-content img {
+    max-height: 100px; /* Decrease height */
+  }
+}
+
+@media (max-width: 576px) {
+  .marquee-content a {
+    padding: 0 1rem; /* Further decrease spacing between elements */
+  }
+  .marquee-content img {
+    max-height: 80px; /* Further decrease height */
+  }
+}
+
+/* animation hover effect */
+.marquee:hover {
+  animation-play-state: paused;
 }
 
 
