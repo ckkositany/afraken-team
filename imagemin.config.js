@@ -5,8 +5,8 @@ import imageminPngquant from "imagemin-pngquant"
 import path from "path"
 
 (async () => {
-  const files = await imagemin(['docs/images/*.{jpg,png}'], {
-    destination: 'docs/images/optimized',
+  const files = await imagemin(['docs/assets/images/*.{jpg,png}'], {
+    destination: 'docs/images/assets/optimized',
     plugins: [
       imageminMozjpeg({ quality: 75 }),
       imageminPngquant({

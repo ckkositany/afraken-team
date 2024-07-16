@@ -11,7 +11,7 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "minify-css": "postcss docs/css/styles.css -o docs/css/styles.min.css",
     "minify-js": "uglifyjs docs/js/scripts.js -o docs/js/scripts.min.js",
-   "compress-images": "node imagemin.config.js"
+    "compress-images": "node imagemin.config.js"
   },
   "keywords": [],
   "author": "",
