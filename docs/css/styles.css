@@ -11065,6 +11065,42 @@ header .container{
   animation-play-state: paused;
 }
 
+/* footer */
+/* styles.css */
+.footer {
+  background: #343a40; /* Ensure dark background */
+  color: #ffffff; /* Ensure white text */
+}
+
+.footer a {
+  color: #ffffff; /* Ensure white text for links */
+  text-decoration: none;
+}
+
+.footer a:hover {
+  color: #d1d1d1; /* Lighten text color on hover */
+}
+
+.btn-social {
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  line-height: 40px;
+  border-radius: 50%;
+  text-align: center;
+  margin-right: 10px;
+}
+/* Nderu */
+/* styles.css */
+.btn-primary {
+  background-color: #007bff;
+  border-color: #007bff;
+}
+
+.btn-primary:hover {
+  background-color: #0056b3;
+  border-color: #004085;
+}
 
 
 header.masthead .masthead-subheading {
