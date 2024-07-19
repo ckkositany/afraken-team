@@ -74,8 +74,8 @@
   --bs-border-radius-xl: 1rem;
   --bs-border-radius-2xl: 2rem;
   --bs-border-radius-pill: 50rem;
-  --bs-link-color: #ffc800;
-  --bs-link-hover-color: #cca000;
+  --bs-link-color: #007bff;
+  --bs-link-hover-color: #0056b3;
   --bs-code-color: #d63384;
   --bs-highlight-bg: #fff4cc;
 }
@@ -2853,19 +2853,19 @@ textarea.form-control-lg {
 
 .btn-primary {
   --bs-btn-color: #fff;
-  --bs-btn-bg: #ffc800;
-  --bs-btn-border-color: #ffc800;
+  --bs-btn-bg: #007bff;
+  --bs-btn-border-color: #007bff;
   --bs-btn-hover-color: #fff;
-  --bs-btn-hover-bg: #d9aa00;
-  --bs-btn-hover-border-color: #cca000;
+  --bs-btn-hover-bg: #0056b3;
+  --bs-btn-hover-border-color: #333333;
   --bs-btn-focus-shadow-rgb: 255, 208, 38;
   --bs-btn-active-color: #fff;
   --bs-btn-active-bg: #cca000;
   --bs-btn-active-border-color: #bf9600;
   --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
   --bs-btn-disabled-color: #fff;
-  --bs-btn-disabled-bg: #ffc800;
-  --bs-btn-disabled-border-color: #ffc800;
+  --bs-btn-disabled-bg: #007bff;
+  --bs-btn-disabled-border-color: #007bff;
 }
 
 .btn-secondary {
@@ -3059,7 +3059,7 @@ textarea.form-control-lg {
   --bs-btn-color: #ffc800;
   --bs-btn-border-color: #ffc800;
   --bs-btn-hover-color: #fff;
-  --bs-btn-hover-bg: #ffc800;
+  --bs-btn-hover-bg: #0056b3;
   --bs-btn-hover-border-color: #ffc800;
   --bs-btn-focus-shadow-rgb: 255, 200, 0;
   --bs-btn-active-color: #fff;
@@ -10911,7 +10911,7 @@ p {
   letter-spacing: 0.0625em;
 }
 #mainNav .navbar-nav .nav-item .nav-link.active, #mainNav .navbar-nav .nav-item .nav-link:hover {
-  color: #ffc800;
+  color: #007bff;
 }
 
 @media (min-width: 992px) {
@@ -11065,42 +11065,6 @@ header .container{
   animation-play-state: paused;
 }
 
-/* footer */
-/* styles.css */
-.footer {
-  background: #343a40; /* Ensure dark background */
-  color: #ffffff; /* Ensure white text */
-}
-
-.footer a {
-  color: #ffffff; /* Ensure white text for links */
-  text-decoration: none;
-}
-
-.footer a:hover {
-  color: #d1d1d1; /* Lighten text color on hover */
-}
-
-.btn-social {
-  display: inline-block;
-  width: 40px;
-  height: 40px;
-  line-height: 40px;
-  border-radius: 50%;
-  text-align: center;
-  margin-right: 10px;
-}
-/* Nderu */
-/* styles.css */
-.btn-primary {
-  background-color: #007bff;
-  border-color: #007bff;
-}
-
-.btn-primary:hover {
-  background-color: #0056b3;
-  border-color: #004085;
-}
 
 
 header.masthead .masthead-subheading {
@@ -11151,7 +11115,7 @@ header.masthead .masthead-heading {
   position: absolute;
   width: 100%;
   height: 100%;
-  background: rgba(255, 200, 0, 0.9);
+  background: rgba(0, 123, 255, 0.7);
   align-items: center;
   justify-content: center;
   opacity: 0;
@@ -11487,62 +11451,3 @@ header.masthead .masthead-heading {
 
 
 
-section#contact {
-  background-color: #212529;
-  background-image: url("../assets/img/map-image.png");
-  background-repeat: no-repeat;
-  background-position: center;
-}
-section#contact .section-heading {
-  color: #fff;
-}
-section#contact form#contactForm .form-group {
-  margin-bottom: 1.5rem;
-}
-section#contact form#contactForm .form-group input,
-section#contact form#contactForm .form-group textarea {
-  padding: 1.25rem;
-}
-section#contact form#contactForm .form-group input.form-control {
-  height: auto;
-}
-section#contact form#contactForm .form-group-textarea {
-  height: 100%;
-}
-section#contact form#contactForm .form-group-textarea textarea {
-  height: 100%;
-  min-height: 10rem;
-}
-section#contact form#contactForm p.help-block {
-  margin: 0;
-}
-section#contact form#contactForm .form-control:focus {
-  border-color: #ffc800;
-  box-shadow: none;
-}
-section#contact form#contactForm ::-webkit-input-placeholder {
-  font-family: "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-  font-weight: 700;
-  color: #ced4da;
-}
-section#contact form#contactForm :-moz-placeholder {
-  font-family: "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-  font-weight: 700;
-  color: #ced4da;
-}
-section#contact form#contactForm ::-moz-placeholder {
-  font-family: "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-  font-weight: 700;
-  color: #ced4da;
-}
-section#contact form#contactForm :-ms-input-placeholder {
-  font-family: "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-  font-weight: 700;
-  color: #ced4da;
-}
-
-.footer {
-  text-align: center;
-  font-size: 0.9rem;
-  font-family: "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-}
